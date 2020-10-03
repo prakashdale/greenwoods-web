@@ -1,0 +1,27 @@
+<h1 class="login-header">Login</h1>
+<mat-card class="login-card">
+  <mat-card-content>
+    <mat-error *ngIf="loginInvalid">
+      The username and password are not recognized.
+    </mat-error>
+    <mat-form-field class="full-width-input">
+      <mat-label>Username</mat-label>
+      <input matInput placeholder="Enter email address" formControlName="username" required>
+      <mat-error>
+        Please provide a valid email address
+      </mat-error>
+    </mat-form-field>
+    <mat-form-field class="full-width-input">
+      <mat-label>Password</mat-label>
+      <input matInput placeholder="Enter password" formControlName="password" required>
+      <mat-error>
+        Please provide a valid password
+      </mat-error>
+    </mat-form-field>
+    <button mat-raised-button color="primary">Login</button>
+  </mat-card-content>
+  <mat-card-actions>
+    <a [routerLink]="['/guest/forgot-password']" routerLinkActive="router-link-active"  mat-button color="primary">Forgot password?</a>
+    <a [routerLink]="['/guest/register']" routerLinkActive="router-link-active"  mat-button color="primary">Register new user</a>
+  </mat-card-actions>
+</mat-card>
