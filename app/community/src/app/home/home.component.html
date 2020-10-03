@@ -1,10 +1,17 @@
+<mat-card class="section-card-400">
+  <mat-card-header>
+    <mat-card-title>Community Member</mat-card-title>
+    <mat-card-subtitle></mat-card-subtitle>
+  </mat-card-header>
+  <mat-card-content>
+    <p>
+      Links for the Community members.
+    </p>
 
-<h1>test poll 1</h1>
 
-<button mat-button color="primary">Primary</button>
-<button mat-raised-button>Basic</button>
-    <button mat-raised-button color="primary">Primary</button>
-    <button mat-raised-button color="accent">Accent</button>
-    <button mat-raised-button color="warn">Warn</button>
-    <button mat-raised-button disabled>Disabled</button>
-    <a mat-raised-button href="https://www.google.com/" target="_blank">Link</a>
+  </mat-card-content>
+  <mat-card-actions>
+    <a [routerLink]="['/guest/login']" routerLinkActive="router-link-active"  mat-button color="primary">Login</a>
+    <a [routerLink]="['/guest/register']" routerLinkActive="router-link-active"  mat-button color="primary">Register new user</a>
+  </mat-card-actions>
+</mat-card>
