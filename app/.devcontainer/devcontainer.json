@@ -1,0 +1,19 @@
+{
+    "name": "GreenwoodsWeb",
+    "dockerFile": "Dockerfile",
+    "forwardPorts": [4200],
+    "runArgs": ["-u", "node"],
+    "settings": {
+        "terminal.integrated.shell.linux": "/bin/bash"
+    },
+    "postCreateCommand": "npm install",
+    "extensions": [
+        "esbenp.prettier-vscode",
+        "johnpapa.angular-essentials",
+        "coenraads.bracket-pair-colorizer",
+        "dbaeumer.vscode-eslint",
+        "ms-vscode.vscode-typescript-tslint-plugin",
+        "angular.ng-template"
+    ]
+
+}
