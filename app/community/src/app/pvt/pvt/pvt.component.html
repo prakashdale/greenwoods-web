@@ -11,7 +11,7 @@
     </mat-nav-list>
   </mat-sidenav>
   <mat-sidenav-content>
-    <mat-toolbar>
+    <mat-toolbar color="primary">
       <button
         type="button"
         aria-label="Toggle sidenav"
@@ -21,11 +21,12 @@
         <mat-icon aria-label="Side nav toggle icon">menu</mat-icon>
       </button>
       <span>Community</span>
-    </mat-toolbar>
-    <mat-toolbar>
       <span class="spacer"></span>
-      <a mat-button color="primary"><mat-icon>add</mat-icon>Add New Community</a>
+      <a mat-button [routerLink]="['/pvt']">Dashboard</a>
+      <span class="spacer"></span>
+      <a mat-button [routerLink]="['/pvt']">Logout</a>
     </mat-toolbar>
+
     <!-- Add Content Here -->
     <router-outlet></router-outlet>
   </mat-sidenav-content>

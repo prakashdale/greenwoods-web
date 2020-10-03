@@ -1,0 +1,42 @@
+<mat-toolbar>
+  <h3>Edit Community</h3>
+  <span class="spacer"></span>
+  <button mat-raised-button color="primary"><mat-icon>save</mat-icon>Save</button>&nbsp;
+  <button mat-raised-button>Cancel</button>
+</mat-toolbar>
+
+<mat-card class="mat-elevation-z0">
+  <mat-card-content>
+    <mat-error>
+      The username and password are not recognized.
+    </mat-error>
+    <mat-form-field class="full-width-input">
+      <mat-label>Name</mat-label>
+      <input matInput placeholder="Enter Community Name" formControlName="name" required>
+      <mat-error>
+        Please provide a valid name
+      </mat-error>
+    </mat-form-field>
+    <mat-form-field class="full-width-input">
+      <mat-label>Registration #</mat-label>
+      <input matInput placeholder="Enter registration #" formControlName="registrationNumber">
+      <mat-error>
+        Please provide a valid registration number
+      </mat-error>
+    </mat-form-field>
+    <mat-form-field class="full-width-input">
+      <mat-label>Email</mat-label>
+      <input matInput placeholder="Enter Primary Email address" formControlName="email" required>
+      <mat-error>
+        Please provide a valid email address
+      </mat-error>
+    </mat-form-field>
+    <mat-form-field class="full-width-input">
+      <mat-label>Phone</mat-label>
+      <input matInput placeholder="Enter Phone Number" formControlName="phone" required>
+      <mat-error>
+        Please provide a valid phone number
+      </mat-error>
+    </mat-form-field>
+  </mat-card-content>
+</mat-card>
