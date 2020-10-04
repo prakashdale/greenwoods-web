@@ -6,19 +6,19 @@
     </mat-error>
     <mat-form-field class="full-width-input">
       <mat-label>Username</mat-label>
-      <input matInput placeholder="Enter email address" formControlName="username" required>
+      <input matInput placeholder="Enter email address"  required>
       <mat-error>
         Please provide a valid email address
       </mat-error>
     </mat-form-field>
     <mat-form-field class="full-width-input">
       <mat-label>Password</mat-label>
-      <input matInput placeholder="Enter password" formControlName="password" required>
+      <input matInput placeholder="Enter password"  required>
       <mat-error>
         Please provide a valid password
       </mat-error>
     </mat-form-field>
-    <button mat-raised-button color="primary">Login</button>
+    <button mat-raised-button color="primary" (click)="testLogin()">Login</button>
   </mat-card-content>
   <mat-card-actions>
     <a [routerLink]="['/guest/forgot-password']" routerLinkActive="router-link-active"  mat-button color="primary">Forgot password?</a>
